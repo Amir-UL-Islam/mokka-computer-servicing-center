@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mokka Computer Servicing Center | Expert Motherboard Repair by Mr. Rubel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            800: '#0B192C',
+                            900: '#07101E',
+                            950: '#040810'
+                        },
+                        electric: {
+                            500: '#0066FF',
+                            600: '#0052CC'
+                        },
+                        gold: {
+                            400: '#FACC15',
+                            500: '#EAB308',
+                            600: '#CA8A04'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(7, 16, 30, 0.95) 0%, rgba(11, 25, 44, 0.9) 100%);
+        }
+
+        .glow-gold {
+            box-shadow: 0 0 25px rgba(234, 179, 8, 0.3);
+        }
+
+        .glow-blue {
+            box-shadow: 0 0 25px rgba(0, 102, 255, 0.3);
+        }
+    </style>
+</head>
+
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-gold-500 selection:text-slate-950">
+
+    <header
+        class="sticky top-0 z-50 bg-navy-900/95 backdrop-blur-md border-b border-slate-800 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center space-x-3 group">
+                <div
+                    class="w-12 h-12 rounded-full bg-gradient-to-tr from-gold-500 to-electric-500 p-0.5 flex items-center justify-center glow-gold">
+                    <div class="w-full h-full bg-navy-900 rounded-full flex items-center justify-center">
+                        <i
+                            class="fa-solid fa-microchip text-gold-400 text-xl group-hover:rotate-180 transition-transform duration-500"></i>
+                    </div>
+                </div>
+                <div>
+                    <span class="text-xl font-extrabold tracking-tight text-white block">MOKKA COMPUTER</span>
+                    <span class="text-xs text-gold-400 font-semibold tracking-wider uppercase">& Servicing Center</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden lg:flex items-center space-x-8 font-medium text-sm">
+                <a href="#home" class="text-slate-300 hover:text-gold-400 transition-colors">Home</a>
+                <a href="#about" class="text-slate-300 hover:text-gold-400 transition-colors">Master Rubel</a>
+                <a href="#services" class="text-slate-300 hover:text-gold-400 transition-colors">Services</a>
+                <a href="#motherboard" class="text-slate-300 hover:text-gold-400 transition-colors">Chip-Level
+                    Repair</a>
+                <a href="#components" class="text-slate-300 hover:text-gold-400 transition-colors">Components</a>
+                <a href="#videos" class="text-slate-300 hover:text-gold-400 transition-colors">YouTube Portfolio</a>
+                <a href="#contact" class="text-slate-300 hover:text-gold-400 transition-colors">Contact</a>
+            </nav>
+
+            <!-- Quick CTA Button -->
+            <div class="hidden sm:flex items-center space-x-4">
+                <a href="tel:01974595143"
+                    class="bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-400 hover:to-gold-500 text-slate-950 font-bold px-5 py-2.5 rounded-xl shadow-lg transition-all duration-300 flex items-center space-x-2 glow-gold">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <span>01974595143</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="menu-toggle" class="lg:hidden text-slate-300 hover:text-white focus:outline-none p-2">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-navy-900 border-b border-slate-800 px-4 pt-2 pb-6 space-y-3">
+            <a href="#home" class="block py-2 text-slate-300 hover:text-gold-400 border-b border-slate-800">Home</a>
+            <a href="#about" class="block py-2 text-slate-300 hover:text-gold-400 border-b border-slate-800">Master
+                Rubel</a>
+            <a href="#services"
+                class="block py-2 text-slate-300 hover:text-gold-400 border-b border-slate-800">Services</a>
+            <a href="#motherboard"
+                class="block py-2 text-slate-300 hover:text-gold-400 border-b border-slate-800">Chip-Level Repair</a>
+            <a href="#components"
+                class="block py-2 text-slate-300 hover:text-gold-400 border-b border-slate-800">Components</a>
+            <a href="#videos" class="block py-2 text-slate-300 hover:text-gold-400 border-b border-slate-800">YouTube
+                Portfolio</a>
+            <a href="#contact" class="block py-2 text-slate-300 hover:text-gold-400">Contact Us</a>
+            <a href="tel:01974595143"
+                class="w-full mt-2 bg-gold-500 text-slate-950 font-bold py-3 rounded-xl flex items-center justify-center space-x-2">
+                <i class="fa-solid fa-phone-volume"></i>
+                <span>Call 01974595143</span>
+            </a>
+        </div>
+    </header>
+
+    <section id="home" class="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-navy-950 py-16">
+        <!-- Background Glow Orbs -->
+        <div
+            class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-electric-500/10 rounded-full blur-3xl pointer-events-none">
+        </div>
+        <div
+            class="absolute bottom-10 right-10 w-[400px] h-[400px] bg-gold-500/10 rounded-full blur-3xl pointer-events-none">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+                <!-- Left Text Content -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div
+                        class="inline-flex items-center space-x-2 bg-navy-900 border border-gold-500/30 px-4 py-2 rounded-full shadow-inner">
+                        <span class="flex h-2.5 w-2.5 rounded-full bg-gold-500 animate-ping"></span>
+                        <span class="text-xs sm:text-sm font-semibold text-gold-400 tracking-wide uppercase">Trusted by
+                            Thousands Across Bangladesh</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-6xl font-black tracking-tight text-white leading-tight">
+                        Advanced <span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-gold-400 via-yellow-300 to-gold-500">Motherboard
+                            Repair</span> & Tech Hub
+                    </h1>
+
+                    <p class="text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                        Welcome to <strong class="text-white">Mokka Computer Servicing Center</strong>. Led by master
+                        technician <strong class="text-gold-400">Mr. Md. Rubel Hossain</strong>, we specialize in
+                        complex chip-level motherboard diagnostics, short-circuit troubleshooting, and authentic
+                        component sales.
+                    </p>
+
+                    <!-- Trust Stats Badges -->
+                    <div class="grid grid-cols-3 gap-4 pt-2 pb-4 max-w-lg mx-auto lg:mx-0">
+                        <div class="bg-navy-900/80 border border-slate-800 p-3 rounded-xl text-center">
+                            <span class="block text-2xl sm:text-3xl font-extrabold text-gold-400">10K+</span>
+                            <span class="text-xs text-slate-400">Motherboards Repaired</span>
+                        </div>
+                        <div class="bg-navy-900/80 border border-slate-800 p-3 rounded-xl text-center">
+                            <span class="block text-2xl sm:text-3xl font-extrabold text-electric-500">15+</span>
+                            <span class="text-xs text-slate-400">Years Experience</span>
+                        </div>
+                        <div class="bg-navy-900/80 border border-slate-800 p-3 rounded-xl text-center">
+                            <span class="block text-2xl sm:text-3xl font-extrabold text-green-400">100%</span>
+                            <span class="text-xs text-slate-400">Client Satisfaction</span>
+                        </div>
+                    </div>
+
+                    <!-- Call To Actions -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="https://wa.me/8801974595143?text=Hello%20Mr.%20Rubel,%20I%20need%20help%20with%20my%20computer%20motherboard/components."
+                            target="_blank"
+                            class="w-full sm:w-auto bg-green-600 hover:bg-green-500 text-white font-bold px-8 py-4 rounded-xl shadow-lg transition-all duration-300 flex items-center justify-center space-x-3 text-base">
+                            <i class="fa-brands fa-whatsapp text-2xl"></i>
+                            <span>Chat on WhatsApp</span>
+                        </a>
+                        <a href="#motherboard"
+                            class="w-full sm:w-auto bg-navy-900 hover:bg-navy-800 border border-slate-700 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-300 flex items-center justify-center space-x-2 text-base">
+                            <i class="fa-solid fa-wrench text-gold-400"></i>
+                            <span>Explore Services</span>
+                        </a>
+                    </div>
+
+                    <!-- Location info strip -->
+                    <div
+                        class="flex items-center justify-center lg:justify-start space-x-2 text-slate-400 text-sm pt-2">
+                        <i class="fa-solid fa-location-dot text-gold-400"></i>
+                        <span>Shop No. G-9, K.J.H Mansion, 83 Laboratory Road, New Elephant Road, Dhaka-1205</span>
+                    </div>
+                </div>
+
+                <!-- Right Visual / Master Rubel Showcase Card -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-full max-w-md">
+                        <!-- Decorative Frame -->
+                        <div
+                            class="absolute -inset-1.5 bg-gradient-to-r from-gold-500 to-electric-500 rounded-3xl blur opacity-70">
+                        </div>
+
+                        <div
+                            class="relative bg-navy-900 border border-slate-800 rounded-2xl p-6 sm:p-8 shadow-2xl space-y-6">
+                            <div class="flex items-center space-x-4">
+                                <div
+                                    class="w-16 h-16 rounded-full bg-gradient-to-br from-gold-400 to-gold-600 p-1 flex-shrink-0">
+                                    <div
+                                        class="w-full h-full bg-navy-950 rounded-full flex items-center justify-center overflow-hidden">
+                                        <i class="fa-solid fa-user-gear text-3xl text-gold-400"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-white">Mr. Md. Rubel Hossain</h3>
+                                    <p class="text-xs text-gold-400 font-semibold">Lead Engineer & Proprietor</p>
+                                    <p class="text-xs text-slate-400 mt-0.5">Master Chip-Level Specialist</p>
+                                </div>
+                            </div>
+
+                            <div class="border-t border-slate-800 pt-4 space-y-3 text-sm text-slate-300">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-slate-400"><i
+                                            class="fa-solid fa-microchip text-gold-400 mr-2"></i> Specialization:</span>
+                                    <span class="font-medium text-white">Intel & AMD Motherboards</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-slate-400"><i
+                                            class="fa-solid fa-shield-halved text-gold-400 mr-2"></i>
+                                        Reliability:</span>
+                                    <span class="font-medium text-white">Advanced Diagnostic Lab</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-slate-400"><i class="fa-solid fa-video text-gold-400 mr-2"></i>
+                                        YouTube Channel:</span>
+                                    <a href="https://www.youtube.com/@mokkacomputerservicingcenter/videos"
+                                        target="_blank"
+                                        class="text-electric-400 hover:underline font-medium">@mokkacomputerservicingcenter</a>
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-navy-950 rounded-xl p-4 border border-slate-800 flex items-center justify-between">
+                                <div>
+                                    <span class="text-xs text-slate-400 block">Direct Emergency Helpline</span>
+                                    <span class="text-lg font-extrabold text-white">01974-595143</span>
+                                </div>
+                                <a href="tel:01974595143"
+                                    class="w-10 h-10 rounded-full bg-gold-500 text-slate-950 flex items-center justify-center hover:bg-gold-400 transition-colors">
+                                    <i class="fa-solid fa-phone"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-navy-900 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+                <div class="lg:col-span-6 space-y-6">
+                    <div
+                        class="inline-flex items-center space-x-2 bg-navy-950 px-3 py-1.5 rounded-lg border border-gold-500/20">
+                        <i class="fa-solid fa-award text-gold-400"></i>
+                        <span class="text-xs font-bold text-gold-400 uppercase tracking-wider">Meet The Master
+                            Engineer</span>
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white">
+                        Bangladesh's Trusted Expert in <span class="text-gold-400">Chip-Level Motherboard Repair</span>
+                    </h2>
+
+                    <p class="text-slate-300 leading-relaxed">
+                        For over 15 years, <strong class="text-white">Mr. Md. Rubel Hossain</strong> has been the go-to
+                        technical wizard for computer repair shops, corporate offices, gamers, and students all across
+                        Bangladesh. Operating out of the bustling tech hub at New Elephant Road, Mokka Computer
+                        Servicing Center has built an unmatched reputation for precision soldering, BGA rework, and
+                        reviving "dead" or "no display" motherboards that others gave up on.
+                    </p>
+
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start space-x-4 bg-navy-950/60 p-4 rounded-xl border border-slate-800">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-gold-500/10 flex items-center justify-center flex-shrink-0 text-gold-400 mt-1">
+                                <i class="fa-solid fa-microchip text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white text-base">Advanced Chip-Level Diagnostic Lab</h4>
+                                <p class="text-sm text-slate-400 mt-1">Equipped with digital oscilloscopes, BGA rework
+                                    stations, and precise thermal imaging to locate exact short circuits on motherboard
+                                    power rails.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4 bg-navy-950/60 p-4 rounded-xl border border-slate-800">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-electric-500/10 flex items-center justify-center flex-shrink-0 text-electric-400 mt-1">
+                                <i class="fa-solid fa-shield-check text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white text-base">Genuine Components & Transparent Pricing</h4>
+                                <p class="text-sm text-slate-400 mt-1">We deal in top-tier RAMs, SSDs, Hard Disks, and
+                                    processor components with honest testing and transparent pricing.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6 grid grid-cols-2 gap-4">
+                    <div class="space-y-4">
+                        <div class="bg-navy-950 border border-slate-800 p-6 rounded-2xl text-center space-y-3">
+                            <i class="fa-solid fa-screwdriver-wrench text-4xl text-gold-400"></i>
+                            <h4 class="font-bold text-white text-lg">No Fix, No Fee</h4>
+                            <p class="text-xs text-slate-400">Transparent diagnostics for all desktop & laptop boards.
+                            </p>
+                        </div>
+                        <div class="bg-navy-950 border border-slate-800 p-6 rounded-2xl text-center space-y-3">
+                            <i class="fa-solid fa-bolt text-4xl text-electric-400"></i>
+                            <h4 class="font-bold text-white text-lg">Quick Turnaround</h4>
+                            <p class="text-xs text-slate-400">Most repairs completed within 24-48 hours.</p>
+                        </div>
+                    </div>
+                    <div class="space-y-4 pt-6">
+                        <div class="bg-navy-950 border border-slate-800 p-6 rounded-2xl text-center space-y-3">
+                            <i class="fa-solid fa-laptop-code text-4xl text-green-400"></i>
+                            <h4 class="font-bold text-white text-lg">BIOS Flashing</h4>
+                            <p class="text-xs text-slate-400">EC programming & clean ME region updates.</p>
+                        </div>
+                        <div class="bg-navy-950 border border-slate-800 p-6 rounded-2xl text-center space-y-3">
+                            <i class="fa-solid fa-users text-4xl text-gold-400"></i>
+                            <h4 class="font-bold text-white text-lg">Nationwide Trust</h4>
+                            <p class="text-xs text-slate-400">Customers courier motherboards from outside Dhaka.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-20 bg-navy-950 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <span class="text-gold-400 font-semibold tracking-wider uppercase text-sm">Professional Expertise</span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-white">Our Core Services & Specializations</h2>
+                <p class="text-slate-300">From intricate motherboard circuit fixes to high-speed storage upgrades, Mr.
+                    Rubel provides end-to-end computer solutions.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Service 1 -->
+                <div
+                    class="bg-navy-900 border border-slate-800 hover:border-gold-500/50 rounded-2xl p-8 transition-all duration-300 group hover:-translate-y-1">
+                    <div
+                        class="w-14 h-14 rounded-xl bg-gold-500/10 flex items-center justify-center text-gold-400 text-2xl mb-6 group-hover:bg-gold-500 group-hover:text-slate-950 transition-colors">
+                        <i class="fa-solid fa-microchip"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Motherboard Chip-Level Repair</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Expert troubleshooting for dead boards, no
+                        display issues, short-circuits on VRM lines, and chipset replacement for Intel & AMD platforms.
+                    </p>
+                    <ul class="space-y-2 text-xs text-slate-300 border-t border-slate-800 pt-4">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-gold-400 mr-2"></i> VRM & MOSFET
+                            repair</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-gold-400 mr-2"></i> No display /
+                            RAM beep fix</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-gold-400 mr-2"></i> Chipset & PCH
+                            ball BGA reballing</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div
+                    class="bg-navy-900 border border-slate-800 hover:border-electric-500/50 rounded-2xl p-8 transition-all duration-300 group hover:-translate-y-1">
+                    <div
+                        class="w-14 h-14 rounded-xl bg-electric-500/10 flex items-center justify-center text-electric-400 text-2xl mb-6 group-hover:bg-electric-500 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Power & USB Short Circuit Fix</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Repairing automatic shutdown issues, burnt
+                        USB ports, dead power management ICs (PMIC), and unstable DC power supply circuitry.</p>
+                    <ul class="space-y-2 text-xs text-slate-300 border-t border-slate-800 pt-4">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-electric-400 mr-2"></i> USB short
+                            circuit removal</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-electric-400 mr-2"></i> Super I/O
+                            chip replacement</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-electric-400 mr-2"></i> Power
+                            jack & adapter faults</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div
+                    class="bg-navy-900 border border-slate-800 hover:border-green-500/50 rounded-2xl p-8 transition-all duration-300 group hover:-translate-y-1">
+                    <div
+                        class="w-14 h-14 rounded-xl bg-green-500/10 flex items-center justify-center text-green-400 text-2xl mb-6 group-hover:bg-green-500 group-hover:text-slate-950 transition-colors">
+                        <i class="fa-solid fa-memory"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Component Upgrades & Sales</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Boost your PC or laptop speed with
+                        high-performance RAM modules, NVMe/SATA SSDs, reliable hard disks, and high-speed processors.
+                    </p>
+                    <ul class="space-y-2 text-xs text-slate-300 border-t border-slate-800 pt-4">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-green-400 mr-2"></i> DDR4 & DDR5
+                            RAM installation</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-green-400 mr-2"></i> High-speed
+                            NVMe M.2 SSDs</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-green-400 mr-2"></i> Desktop &
+                            Laptop HDD upgrades</li>
+                    </ul>
+                </div>
+
+                <!-- Service 4 -->
+                <div
+                    class="bg-navy-900 border border-slate-800 hover:border-gold-500/50 rounded-2xl p-8 transition-all duration-300 group hover:-translate-y-1">
+                    <div
+                        class="w-14 h-14 rounded-xl bg-gold-500/10 flex items-center justify-center text-gold-400 text-2xl mb-6 group-hover:bg-gold-500 group-hover:text-slate-950 transition-colors">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">BIOS Flashing & Programming</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Dedicated SPI programmer service for
+                        corrupted BIOS ROMs, password lock removals, EC firmware flashing, and microcode updates.</p>
+                    <ul class="space-y-2 text-xs text-slate-300 border-t border-slate-800 pt-4">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-gold-400 mr-2"></i> Corrupted
+                            BIOS recovery</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-gold-400 mr-2"></i> EC keyboard
+                            controller flash</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-gold-400 mr-2"></i> Clean ME
+                            region setup</li>
+                    </ul>
+                </div>
+
+                <!-- Service 5 -->
+                <div
+                    class="bg-navy-900 border border-slate-800 hover:border-electric-500/50 rounded-2xl p-8 transition-all duration-300 group hover:-translate-y-1">
+                    <div
+                        class="w-14 h-14 rounded-xl bg-electric-500/10 flex items-center justify-center text-electric-400 text-2xl mb-6 group-hover:bg-electric-500 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-screwdriver"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Laptop & Desktop Servicing</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Comprehensive thermal paste replacement, fan
+                        cleaning, hinge repair, keyboard replacements, and full internal health checkups.</p>
+                    <ul class="space-y-2 text-xs text-slate-300 border-t border-slate-800 pt-4">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-electric-400 mr-2"></i> Premium
+                            thermal paste application</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-electric-400 mr-2"></i> Deep fan
+                            & heatsink dust cleaning</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-electric-400 mr-2"></i> Laptop
+                            body & hinge restoration</li>
+                    </ul>
+                </div>
+
+                <!-- Service 6 -->
+                <div
+                    class="bg-navy-900 border border-slate-800 hover:border-green-500/50 rounded-2xl p-8 transition-all duration-300 group hover:-translate-y-1">
+                    <div
+                        class="w-14 h-14 rounded-xl bg-green-500/10 flex items-center justify-center text-green-400 text-2xl mb-6 group-hover:bg-green-500 group-hover:text-slate-950 transition-colors">
+                        <i class="fa-solid fa-box-archive"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Courier Repair Service (Nationwide)</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Outside Dhaka? Safely courier your faulty
+                        motherboard or laptop to Mr. Rubel. We inspect, repair, test, and courier it back securely.</p>
+                    <ul class="space-y-2 text-xs text-slate-300 border-t border-slate-800 pt-4">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-green-400 mr-2"></i> Secure
+                            parcel handling</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-green-400 mr-2"></i> Video proof
+                            testing before return</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-green-400 mr-2"></i> Fast
+                            nationwide delivery via Sundarban/Steadfast</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="motherboard" class="py-20 bg-navy-900 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+                <div class="lg:col-span-6 space-y-6">
+                    <div
+                        class="inline-flex items-center space-x-2 bg-navy-950 px-3 py-1.5 rounded-lg border border-gold-500/20">
+                        <i class="fa-solid fa-award text-gold-400"></i>
+                        <span class="text-xs font-bold text-gold-400 uppercase tracking-wider">Expertise Across All
+                            Brands</span>
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white">
+                        Specialized Motherboard Repair for <span class="text-gold-400">Intel, AMD & All Major
+                            Brands</span>
+                    </h2>
+
+                    <p class="text-slate-300 leading-relaxed">
+                        Motherboards are the nervous system of any computer. When they fail, buying a replacement can be
+                        extremely costly. Mr. Rubel specializes in component-level repair—saving you up to 70% of the
+                        replacement cost by fixing only the exact damaged capacitor, MOSFET, chip, or trace.
+                    </p>
+
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-2">
+                        <div class="bg-navy-950 p-4 rounded-xl border border-slate-800 text-center">
+                            <span class="block font-bold text-white text-base">Gigabyte</span>
+                            <span class="text-xs text-slate-400">H61, H81, B450, Z-Series</span>
+                        </div>
+                        <div class="bg-navy-950 p-4 rounded-xl border border-slate-800 text-center">
+                            <span class="block font-bold text-white text-base">ASUS</span>
+                            <span class="text-xs text-slate-400">Prime, ROG, TUF Gaming</span>
+                        </div>
+                        <div class="bg-navy-950 p-4 rounded-xl border border-slate-800 text-center">
+                            <span class="block font-bold text-white text-base">MSI</span>
+                            <span class="text-xs text-slate-400">Pro, Gaming Series</span>
+                        </div>
+                        <div class="bg-navy-950 p-4 rounded-xl border border-slate-800 text-center">
+                            <span class="block font-bold text-white text-base">HP / Dell</span>
+                            <span class="text-xs text-slate-400">OEM Workstations & Laptops</span>
+                        </div>
+                        <div class="bg-navy-950 p-4 rounded-xl border border-slate-800 text-center">
+                            <span class="block font-bold text-white text-base">Intel Desktop</span>
+                            <span class="text-xs text-slate-400">Original Intel Boards</span>
+                        </div>
+                        <div class="bg-navy-950 p-4 rounded-xl border border-slate-800 text-center">
+                            <span class="block font-bold text-white text-base">AMD Ryzen</span>
+                            <span class="text-xs text-slate-400">AM4 & AM5 Platforms</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6 bg-navy-950 p-8 rounded-3xl border border-slate-800 space-y-6 shadow-2xl">
+                    <h3 class="text-2xl font-bold text-white flex items-center space-x-3">
+                        <i class="fa-solid fa-stethoscope text-gold-400"></i>
+                        <span>Common Motherboard Issues We Solve</span>
+                    </h3>
+
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-3 bg-navy-900 p-4 rounded-xl border border-slate-800">
+                            <i class="fa-solid fa-circle-xmark text-red-400 text-xl mt-0.5"></i>
+                            <div>
+                                <h4 class="font-bold text-white text-sm">Dead Board (No Power / No Fan Spin)</h4>
+                                <p class="text-xs text-slate-400 mt-0.5">Caused by power surge, blown standby regulator,
+                                    or shorted MOSFETs on the 12V rail.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-3 bg-navy-900 p-4 rounded-xl border border-slate-800">
+                            <i class="fa-solid fa-triangle-exclamation text-yellow-400 text-xl mt-0.5"></i>
+                            <div>
+                                <h4 class="font-bold text-white text-sm">No Display / Beep Sound Error</h4>
+                                <p class="text-xs text-slate-400 mt-0.5">RAM slot failure, northbridge/southbridge
+                                    communication loss, or corrupted BIOS.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-3 bg-navy-900 p-4 rounded-xl border border-slate-800">
+                            <i class="fa-solid fa-bolt text-electric-400 text-xl mt-0.5"></i>
+                            <div>
+                                <h4 class="font-bold text-white text-sm">USB Ports Short Circuit & Restart Issue</h4>
+                                <p class="text-xs text-slate-400 mt-0.5">Damaged front/back USB data pins causing
+                                    motherboard auto-shutdown or freezing.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/8801974595143?text=Hello%20Mr.%20Rubel,%20my%20motherboard%20has%20a%20problem."
+                        target="_blank"
+                        class="w-full bg-gold-500 hover:bg-gold-400 text-slate-950 font-bold py-3.5 rounded-xl transition-colors flex items-center justify-center space-x-2">
+                        <i class="fa-solid fa-comments"></i>
+                        <span>Consult Mr. Rubel Now</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="components" class="py-20 bg-navy-950 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <span class="text-gold-400 font-semibold tracking-wider uppercase text-sm">Genuine Spare Parts &
+                    Upgrades</span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-white">Quality Components Available At Store</h2>
+                <p class="text-slate-300">Enhance your computer speed and storage with verified, high-performance
+                    components tested by our technicians.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <!-- Component 1 -->
+                <div
+                    class="bg-navy-900 border border-slate-800 rounded-2xl p-6 text-center space-y-4 hover:border-gold-500/40 transition-all">
+                    <div
+                        class="w-16 h-16 mx-auto rounded-2xl bg-gold-500/10 flex items-center justify-center text-gold-400 text-3xl">
+                        <i class="fa-solid fa-memory"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">RAM Modules</h3>
+                    <p class="text-xs text-slate-400">Desktop & Laptop RAM. DDR3, DDR4, and high-speed DDR5 options from
+                        Corsair, Kingston, Transcend & Crucial.</p>
+                    <span
+                        class="inline-block bg-navy-950 text-gold-400 text-xs font-semibold px-3 py-1 rounded-full border border-gold-500/20">Warranty
+                        Included</span>
+                </div>
+
+                <!-- Component 2 -->
+                <div
+                    class="bg-navy-900 border border-slate-800 rounded-2xl p-6 text-center space-y-4 hover:border-electric-500/40 transition-all">
+                    <div
+                        class="w-16 h-16 mx-auto rounded-2xl bg-electric-500/10 flex items-center justify-center text-electric-400 text-3xl">
+                        <i class="fa-solid fa-hard-drive"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">NVMe & SATA SSDs</h3>
+                    <p class="text-xs text-slate-400">Lightning-fast M.2 NVMe and 2.5-inch SATA SSDs to make your boot
+                        time 10x faster. 128GB up to 2TB.</p>
+                    <span
+                        class="inline-block bg-navy-950 text-electric-400 text-xs font-semibold px-3 py-1 rounded-full border border-electric-500/20">High
+                        Performance</span>
+                </div>
+
+                <!-- Component 3 -->
+                <div
+                    class="bg-navy-900 border border-slate-800 rounded-2xl p-6 text-center space-y-4 hover:border-green-500/40 transition-all">
+                    <div
+                        class="w-16 h-16 mx-auto rounded-2xl bg-green-500/10 flex items-center justify-center text-green-400 text-3xl">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">Hard Disk Drives (HDD)</h3>
+                    <p class="text-xs text-slate-400">High-capacity 500GB, 1TB, and 2TB mechanical hard disks for secure
+                        data backup and massive file storage.</p>
+                    <span
+                        class="inline-block bg-navy-950 text-green-400 text-xs font-semibold px-3 py-1 rounded-full border border-green-500/20">Reliable
+                        Storage</span>
+                </div>
+
+                <!-- Component 4 -->
+                <div
+                    class="bg-navy-900 border border-slate-800 rounded-2xl p-6 text-center space-y-4 hover:border-gold-500/40 transition-all">
+                    <div
+                        class="w-16 h-16 mx-auto rounded-2xl bg-gold-500/10 flex items-center justify-center text-gold-400 text-3xl">
+                        <i class="fa-solid fa-microchip"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">Processors & Coolers</h3>
+                    <p class="text-xs text-slate-400">Intel Core i3, i5, i7 processors and AMD Ryzen series along with
+                        heavy-duty cooling fans and thermal paste.</p>
+                    <span
+                        class="inline-block bg-navy-950 text-gold-400 text-xs font-semibold px-3 py-1 rounded-full border border-gold-500/20">Genuine
+                        Stock</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="videos" class="py-20 bg-navy-900 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div class="space-y-3">
+                    <span class="text-red-500 font-semibold tracking-wider uppercase text-sm flex items-center">
+                        <i class="fa-brands fa-youtube text-xl mr-2"></i> Live Repair Logs
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Mr. Rubel's YouTube Repair Portfolio</h2>
+                    <p class="text-slate-300">Watch live chip-level diagnostics, motherboard un-shorting, and component
+                        repair videos on our official channel.</p>
+                </div>
+                <div class="mt-6 md:mt-0">
+                    <a href="https://www.youtube.com/@mokkacomputerservicingcenter/videos" target="_blank"
+                        class="bg-red-600 hover:bg-red-500 text-white font-bold px-6 py-3 rounded-xl transition-colors inline-flex items-center space-x-2">
+                        <i class="fa-brands fa-youtube text-xl"></i>
+                        <span>Visit YouTube Channel</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- YouTube Videos Grid (Mock / Featured embedded highlights from channel) -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <!-- Video Card 1 -->
+                <div
+                    class="bg-navy-950 border border-slate-800 rounded-2xl overflow-hidden group hover:border-red-500/50 transition-all">
+                    <div class="relative aspect-video bg-slate-900 flex items-center justify-center overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-t from-navy-950/80 to-transparent z-10"></div>
+                        <img src="https://placehold.co/600x338/0b192c/facc15?text=Motherboard+Repair+Log"
+                            alt="Repair Log"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <a href="https://www.youtube.com/@mokkacomputerservicingcenter/videos" target="_blank"
+                            class="absolute z-20 w-14 h-14 rounded-full bg-red-600 text-white flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-play text-xl ml-1"></i>
+                        </a>
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <span
+                            class="text-xs font-semibold text-red-400 bg-red-950/50 px-2.5 py-1 rounded-md border border-red-500/20">Gigabyte
+                            & ASUS Repair</span>
+                        <h3 class="font-bold text-white text-base leading-snug">Dead Motherboard Chip-Level Short
+                            Circuit Troubleshooting by Mr. Rubel</h3>
+                        <p class="text-xs text-slate-400">Step by step identification of blown mosfets and reviving dead
+                            power rails.</p>
+                    </div>
+                </div>
+
+                <!-- Video Card 2 -->
+                <div
+                    class="bg-navy-950 border border-slate-800 rounded-2xl overflow-hidden group hover:border-red-500/50 transition-all">
+                    <div class="relative aspect-video bg-slate-900 flex items-center justify-center overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-t from-navy-950/80 to-transparent z-10"></div>
+                        <img src="https://placehold.co/600x338/0b192c/0066ff?text=No+Display+Fix" alt="Repair Log"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <a href="https://www.youtube.com/@mokkacomputerservicingcenter/videos" target="_blank"
+                            class="absolute z-20 w-14 h-14 rounded-full bg-red-600 text-white flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-play text-xl ml-1"></i>
+                        </a>
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <span
+                            class="text-xs font-semibold text-red-400 bg-red-950/50 px-2.5 py-1 rounded-md border border-red-500/20">No
+                            Display Solution</span>
+                        <h3 class="font-bold text-white text-base leading-snug">Solving Stubborn RAM Beep & No Display
+                            Issues on H61/H81 Motherboards</h3>
+                        <p class="text-xs text-slate-400">Advanced cleaning, socket testing, and BIOS reprogramming
+                            demonstration.</p>
+                    </div>
+                </div>
+
+                <!-- Video Card 3 -->
+                <div
+                    class="bg-navy-950 border border-slate-800 rounded-2xl overflow-hidden group hover:border-red-500/50 transition-all">
+                    <div class="relative aspect-video bg-slate-900 flex items-center justify-center overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-t from-navy-950/80 to-transparent z-10"></div>
+                        <img src="https://placehold.co/600x338/0b192c/22c55e?text=SSD+RAM+Upgrade" alt="Repair Log"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <a href="https://www.youtube.com/@mokkacomputerservicingcenter/videos" target="_blank"
+                            class="absolute z-20 w-14 h-14 rounded-full bg-red-600 text-white flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-play text-xl ml-1"></i>
+                        </a>
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <span
+                            class="text-xs font-semibold text-red-400 bg-red-950/50 px-2.5 py-1 rounded-md border border-red-500/20">Component
+                            Upgrades</span>
+                        <h3 class="font-bold text-white text-base leading-snug">Upgrading Old PCs with NVMe SSDs & RAM
+                            for Maximum Gaming Speed</h3>
+                        <p class="text-xs text-slate-400">How old office PCs get a 10x performance boost at Mokka
+                            Computer.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-navy-950 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <span class="text-gold-400 font-semibold tracking-wider uppercase text-sm">Customer Feedback</span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-white">Trusted by Thousands Across Bangladesh</h2>
+                <p class="text-slate-300">Read what our clients say about Mr. Rubel's honest advice and expert
+                    motherboard servicing.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <!-- Testimonial 1 -->
+                <div class="bg-navy-900 border border-slate-800 p-8 rounded-2xl relative space-y-4">
+                    <div class="flex text-gold-400 space-x-1 text-sm">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed italic">
+                        "My Gigabyte motherboard was declared dead by 3 other shops in Elephant Road. Mr. Rubel solved
+                        the short circuit in just 2 hours! Very honest person and extremely knowledgeable."
+                    </p>
+                    <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+                        <div>
+                            <h4 class="font-bold text-white text-sm">Tanvir Ahmed</h4>
+                            <span class="text-xs text-slate-400">Dhaka University Student</span>
+                        </div>
+                        <i class="fa-solid fa-quote-right text-slate-700 text-2xl"></i>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-navy-900 border border-slate-800 p-8 rounded-2xl relative space-y-4">
+                    <div class="flex text-gold-400 space-x-1 text-sm">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed italic">
+                        "I sent my gaming motherboard via courier from Sylhet to Mokka Computer. Mr. Rubel repaired it
+                        professionally and sent video tests before shipping it back. Amazing service!"
+                    </p>
+                    <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+                        <div>
+                            <h4 class="font-bold text-white text-sm">Mainul Islam</h4>
+                            <span class="text-xs text-slate-400">Sylhet Client</span>
+                        </div>
+                        <i class="fa-solid fa-quote-right text-slate-700 text-2xl"></i>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-navy-900 border border-slate-800 p-8 rounded-2xl relative space-y-4">
+                    <div class="flex text-gold-400 space-x-1 text-sm">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed italic">
+                        "Best place to buy genuine RAM and NVMe SSDs in New Elephant Road. Fair prices and Mr. Rubel
+                        personally tested everything right in front of me."
+                    </p>
+                    <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+                        <div>
+                            <h4 class="font-bold text-white text-sm">Rakibul Hasan</h4>
+                            <span class="text-xs text-slate-400">PC Gamer, Dhanmondi</span>
+                        </div>
+                        <i class="fa-solid fa-quote-right text-slate-700 text-2xl"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-navy-900 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+
+                <!-- Left Contact Info -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div
+                        class="inline-flex items-center space-x-2 bg-navy-950 px-3 py-1.5 rounded-lg border border-gold-500/20">
+                        <i class="fa-solid fa-location-dot text-gold-400"></i>
+                        <span class="text-xs font-bold text-gold-400 uppercase tracking-wider">Visit Our Shop</span>
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Get in Touch with Mr. Rubel</h2>
+                    <p class="text-slate-300">Have a dead motherboard, need component upgrades, or want to courier your
+                        device from outside Dhaka? Reach out today.</p>
+
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start space-x-4 bg-navy-950 p-4 rounded-xl border border-slate-800">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-gold-500/10 flex items-center justify-center flex-shrink-0 text-gold-400 mt-1">
+                                <i class="fa-solid fa-shop text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white text-sm">Shop Address</h4>
+                                <p class="text-xs text-slate-400 mt-1">83, Laboratory Road, K.J.H Mansion, Shop No. G-9
+                                    (Ground Floor), New Elephant Road, Dhaka-1205, Bangladesh</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4 bg-navy-950 p-4 rounded-xl border border-slate-800">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-green-500/10 flex items-center justify-center flex-shrink-0 text-green-400 mt-1">
+                                <i class="fa-solid fa-phone-volume text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white text-sm">Phone / WhatsApp</h4>
+                                <p class="text-xs text-slate-400 mt-1">01974-595143 (Direct call & WhatsApp support)</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4 bg-navy-950 p-4 rounded-xl border border-slate-800">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-electric-500/10 flex items-center justify-center flex-shrink-0 text-electric-400 mt-1">
+                                <i class="fa-solid fa-clock text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white text-sm">Working Hours</h4>
+                                <p class="text-xs text-slate-400 mt-1">Saturday to Thursday: 10:00 AM – 8:30 PM (Friday
+                                    Closed)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Quick Inquiry Form -->
+                <div class="lg:col-span-7 bg-navy-950 p-8 rounded-3xl border border-slate-800 shadow-2xl">
+                    <h3 class="text-2xl font-bold text-white mb-2">Send a Direct Inquiry to Mr. Rubel</h3>
+                    <p class="text-slate-400 text-sm mb-6">Fill out this quick form or connect instantly via WhatsApp
+                        for rapid diagnosis.</p>
+
+                    <form id="inquiry-form" class="space-y-4" onsubmit="handleFormSubmit(event)">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-1">Your Name</label>
+                                <input type="text" id="name" required placeholder="Enter your full name"
+                                    class="w-full bg-navy-900 border border-slate-800 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-gold-500">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-1">Phone / WhatsApp</label>
+                                <input type="tel" id="phone" required placeholder="017xxxxxxxx"
+                                    class="w-full bg-navy-900 border border-slate-800 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-gold-500">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-1">Service / Component
+                                Needed</label>
+                            <select id="service-type"
+                                class="w-full bg-navy-900 border border-slate-800 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-gold-500">
+                                <option value="Motherboard Chip-Level Repair">Motherboard Chip-Level Repair</option>
+                                <option value="No Display / Short Circuit Fix">No Display / Short Circuit Fix</option>
+                                <option value="RAM / SSD / Component Upgrade">RAM / SSD / Component Upgrade</option>
+                                <option value="BIOS Flashing / Programming">BIOS Flashing / Programming</option>
+                                <option value="General Laptop/PC Servicing">General Laptop/PC Servicing</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-1">Describe Your Device &
+                                Problem</label>
+                            <textarea id="message" rows="4" required
+                                placeholder="E.g., Gigabyte H61 motherboard has no display and fan is spinning repeatedly..."
+                                class="w-full bg-navy-900 border border-slate-800 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-gold-500"></textarea>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row gap-4 pt-2">
+                            <button type="submit"
+                                class="flex-1 bg-gold-500 hover:bg-gold-400 text-slate-950 font-bold py-3.5 px-6 rounded-xl transition-colors flex items-center justify-center space-x-2">
+                                <i class="fa-solid fa-paper-plane"></i>
+                                <span>Send Inquiry Message</span>
+                            </button>
+                            <a href="https://wa.me/8801974595143" target="_blank"
+                                class="flex-1 bg-green-600 hover:bg-green-500 text-white font-bold py-3.5 px-6 rounded-xl transition-colors flex items-center justify-center space-x-2">
+                                <i class="fa-brands fa-whatsapp text-xl"></i>
+                                <span>Direct WhatsApp Chat</span>
+                            </a>
+                        </div>
+                    </form>
+
+                    <!-- Success Message Box -->
+                    <div id="success-box"
+                        class="hidden mt-4 bg-green-950/80 border border-green-500/40 p-4 rounded-xl text-green-300 text-sm text-center">
+                        <i class="fa-solid fa-circle-check text-green-400 mr-2 text-lg"></i> Thank you! Your inquiry has
+                        been noted. You can also chat directly with Mr. Rubel on WhatsApp: <a
+                            href="https://wa.me/8801974595143" class="underline font-bold text-white">01974595143</a>.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-navy-950 border-t border-slate-800 py-12 text-slate-400 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <div class="space-y-4 md:col-span-1">
+                    <div class="flex items-center space-x-3">
+                        <div
+                            class="w-10 h-10 rounded-full bg-gradient-to-tr from-gold-500 to-electric-500 p-0.5 flex items-center justify-center">
+                            <div class="w-full h-full bg-navy-900 rounded-full flex items-center justify-center">
+                                <i class="fa-solid fa-microchip text-gold-400 text-sm"></i>
+                            </div>
+                        </div>
+                        <span class="text-lg font-extrabold text-white">MOKKA COMPUTER</span>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Leading computer motherboard repair center & component supplier in Dhaka, Bangladesh. Headed by
+                        Mr. Md. Rubel Hossain.
+                    </p>
+                </div>
+
+                <div class="space-y-3">
+                    <h4 class="text-white font-bold text-base">Quick Links</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#home" class="hover:text-gold-400 transition-colors">Home</a></li>
+                        <li><a href="#about" class="hover:text-gold-400 transition-colors">Master Rubel</a></li>
+                        <li><a href="#services" class="hover:text-gold-400 transition-colors">Services Grid</a></li>
+                        <li><a href="#motherboard" class="hover:text-gold-400 transition-colors">Motherboard Repair</a>
+                        </li>
+                        <li><a href="#components" class="hover:text-gold-400 transition-colors">Component Sales</a></li>
+                    </ul>
+                </div>
+
+                <div class="space-y-3">
+                    <h4 class="text-white font-bold text-base">Services</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><span class="text-slate-300">Chip-Level Diagnostics</span></li>
+                        <li><span class="text-slate-300">Short Circuit Fixing</span></li>
+                        <li><span class="text-slate-300">RAM & NVMe SSD Upgrades</span></li>
+                        <li><span class="text-slate-300">BIOS Flashing & Recovery</span></li>
+                        <li><span class="text-slate-300">Nationwide Courier Service</span></li>
+                    </ul>
+                </div>
+
+                <div class="space-y-3">
+                    <h4 class="text-white font-bold text-base">Connect & Social</h4>
+                    <p class="text-xs text-slate-400">Watch our repair logs and subscribe to our official YouTube
+                        portfolio:</p>
+                    <a href="https://www.youtube.com/@mokkacomputerservicingcenter/videos" target="_blank"
+                        class="inline-flex items-center space-x-2 bg-red-600 hover:bg-red-500 text-white font-semibold text-xs px-4 py-2.5 rounded-lg transition-colors">
+                        <i class="fa-brands fa-youtube text-base"></i>
+                        <span>@mokkacomputerservicingcenter</span>
+                    </a>
+                </div>
+            </div>
+
+            <div
+                class="border-t border-slate-900 pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500">
+                <p>&copy; 2026 Mokka Computer Servicing Center. Proprietor: Mr. Md. Rubel Hossain. All rights reserved.
+                </p>
+                <p class="mt-2 sm:mt-0">Shop No. G-9, K.J.H Mansion, 83 Laboratory Road, New Elephant Road, Dhaka-1205
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle Mobile Menu
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on link click
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Form Submission handler
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const service = document.getElementById('service-type').value;
+            const message = document.getElementById('message').value;
+
+            // Show success box
+            document.getElementById('success-box').classList.remove('hidden');
+
+            // Construct WhatsApp redirection URL
+            const whatsappText = `Hello Mr. Rubel, my name is ${name} (${phone}). Service required: ${service}. Details: ${message}`;
+            const encodedText = encodeURIComponent(whatsappText);
+
+            // Open WhatsApp after 1.5 seconds
+            setTimeout(() => {
+                window.open(`https://wa.me/8801974595143?text=${encodedText}`, '_blank');
+            }, 1000);
+        }
+    </script>
+</body>
+
+</html>
